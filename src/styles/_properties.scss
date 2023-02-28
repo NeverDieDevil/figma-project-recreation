@@ -1,0 +1,21 @@
+$background-color-primary: #272d35;
+$background-color-secondary: #0e131a;
+$background-decor-primary: #6f5684;
+$background-decor-secondary: #7b6f9d;
+$font-color-primary: #ffffff;
+$font-color-secondary: #c4c4c4;
+
+@font-face {
+  font-family: "Kiona";
+  src: url("//db.onlinewebfonts.com/t/3ba508d4210940c399f65688b1125916.eot");
+  src: url("//db.onlinewebfonts.com/t/3ba508d4210940c399f65688b1125916.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3ba508d4210940c399f65688b1125916.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3ba508d4210940c399f65688b1125916.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3ba508d4210940c399f65688b1125916.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3ba508d4210940c399f65688b1125916.svg#Kiona")
+      format("svg");
+}

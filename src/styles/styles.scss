@@ -1,0 +1,45 @@
+@import "./properties";
+
+.App {
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-family: sans-serif;
+  color: $font-color-primary;
+  text-align: center;
+
+  .rectangleLessPurple {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/Rectangle_225.png");
+    background-position: right;
+    background-size: contain;
+  }
+
+  .rectanglePurple {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/Rectangle_226.png");
+    background-position: right;
+    background-size: contain;
+  }
+  main {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
+body {
+  margin: 0;
+  background-color: $background-color-primary;
+}
