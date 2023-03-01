@@ -40,8 +40,7 @@ const DashboardMenu = () => {
       text: "Logout",
     },
   ];
-  // console.log(options);
-  const menu = options.map((ele, index) => {
+  const menu = options.map((ele) => {
     console.log(ele.text);
     <MenuOption text={ele.text} />;
   });
