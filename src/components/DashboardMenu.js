@@ -40,13 +40,14 @@ const DashboardMenu = () => {
       text: "Logout",
     },
   ];
+  const menu = options.map((ele) => {
+    console.log(ele.text);
+    <MenuOption text={ele.text} />;
+  });
+  console.log(menu);
   return (
     <Tile>
-      <div className="dashboardMenu">
-        {options.forEach((ele, index) => {
-          <MenuOption icon={ele.icon} text={ele.text} />;
-        })}
-      </div>
+      <div className="dashboardMenu">{menu}</div>
     </Tile>
   );
 };
