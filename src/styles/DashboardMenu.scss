@@ -1,0 +1,14 @@
+.dashboardMenu {
+  //   width: 209px;
+  padding: 33px 42px 40px 0;
+  position: relative;
+  .bar {
+    margin: 69px 0 69px 27px;
+    content: "";
+    border: 1px solid white;
+    opacity: 0.2;
+  }
+  .notSelected {
+    opacity: 0.6;
+  }
+}

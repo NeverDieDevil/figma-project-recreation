@@ -1,13 +1,16 @@
 @import "./properties";
 
 .dashboard {
+  display: flex;
+  // justify-content: left;
+  
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 1465px;
   height: 900px;
   background-color: $background-color-secondary;
-  padding: 32px;
+  padding: 20px;
   box-sizing: border-box;
   border-radius: 40px;
 }

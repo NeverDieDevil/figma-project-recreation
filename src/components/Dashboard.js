@@ -1,10 +1,15 @@
 import "../styles/Dashboard.scss";
+import Column from "./Column";
 import DashboardMenu from "./DashboardMenu";
+import Upgrade from "./Upgrade";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <DashboardMenu />
+      <Column>
+        <DashboardMenu />
+        <Upgrade />
+      </Column>
     </div>
   );
 };
