@@ -1,0 +1,30 @@
+@import "properties";
+
+.menuOption {
+  padding-left: 27px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  &:not(.last) {
+    padding-bottom: 32px;
+  }
+  &:last-child {
+    color: #cd5656;
+  }
+  .optionText {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 16px;
+  }
+
+  &.selected::before {
+    position: absolute;
+    width: 8px;
+    height: 35px;
+    left: 0px;
+    background: linear-gradient(102.27deg, #5948b7 0%, #602da2 100%);
+    border-radius: 0px 24px 24px 0px;
+    content: "";
+  }
+}

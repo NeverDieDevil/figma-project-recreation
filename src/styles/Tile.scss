@@ -1,7 +1,9 @@
 @import "./properties";
 
 .tile {
+  display: inline-block;
   background-color: $background-color-primary;
   border-radius: 20px;
-  padding: 40px 40px 40px 30px;
+  margin: 12px;
+  // padding: 40px 40px 40px 30px;
 }

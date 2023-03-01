@@ -1,13 +1,16 @@
+import { Fragment } from "react/cjs/react.production.min";
 import "../styles/MenuOption.scss";
 
 const MenuOption = (props) => {
-  console.log("generating menu option");
-  const { icon, text } = props;
+  const { index, icon, text, style } = props;
   return (
-    <div className="menuOption">
-      {/* <img src={icon} /> */}
-      <span>{text}</span>
-    </div>
+    <Fragment>
+      <div className={`menuOption ${style}`}>
+        <img src={icon} />
+        <span className="optionText">{text}</span>
+      </div>
+      {index == 4 ? <div className="bar"></div> : null}
+    </Fragment>
   );
 };
 
