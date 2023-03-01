@@ -5,7 +5,7 @@ const MenuOption = (props) => {
   const { icon, text } = props;
   return (
     <div className="menuOption">
-      <img src={icon} />
+      {/* <img src={icon} /> */}
       <span>{text}</span>
     </div>
   );
