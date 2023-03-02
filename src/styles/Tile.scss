@@ -1,10 +1,18 @@
 @import "./properties";
 
 .tile {
-  display: inline-block;
+  display: flex;
   background-color: $background-color-primary;
-  // background-color: white;
   border-radius: 20px;
   margin: 12px;
-  // padding: 40px 40px 40px 30px;
+  &.specialFin {
+    background: linear-gradient(102.27deg, #6f59e6 0%, #4f1797 100%);
+    box-shadow: 4px 24px 45px rgba(111, 76, 164, 0.16);
+    border-radius: 20px;
+  }
+  &.specialExp {
+    background: linear-gradient(102.27deg, #a453cb 0%, #8b10b6 100%);
+    box-shadow: 4px 24px 45px rgba(111, 76, 164, 0.16);
+    border-radius: 20px;
+  }
 }
