@@ -6,7 +6,7 @@ const Upgrade = () => {
   return (
     <Tile>
       <div className="upgrade">
-        <img src={UpgradeIcon} />
+        <img src={UpgradeIcon} className="upgradeIcon" />
         <span className="upgradeTitle">Upgrade to Pro</span>
         <span className="upgradeDetails">
           Check your magic on this Pro Dashboard

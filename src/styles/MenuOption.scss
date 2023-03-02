@@ -4,9 +4,10 @@
   padding-left: 27px;
   display: flex;
   justify-content: left;
+  // border: 1px solid white;
   align-items: center;
   &:not(.last) {
-    padding-bottom: 32px;
+    margin-bottom: 33px;
   }
   &:last-child {
     color: #cd5656;
@@ -16,6 +17,7 @@
     font-size: 14px;
     font-weight: 500;
     margin-left: 16px;
+    line-height: 21px;
   }
 
   &.selected::before {
