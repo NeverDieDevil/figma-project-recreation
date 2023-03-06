@@ -1,0 +1,23 @@
+.total {
+  display: flex;
+  //   flex-direction: column;
+  flex-wrap: wrap;
+  margin: 38px 87px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 47px;
+    .title {
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .value {
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 40.5px;
+    }
+  }
+}

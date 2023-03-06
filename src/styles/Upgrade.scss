@@ -1,21 +1,36 @@
 @import "./properties";
 
 .upgrade {
-  //   display: flex;
-  //   flex-direction: column;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
-  background-color: $background-color-primary;
   width: 210px;
-  height: 210px;
-  padding: 40px 35px 34px;
+  // height: 210px;
+  padding: 38px 35px 43px;
   .upgradeTitle {
     font-family: "Poppins";
     font-weight: 600;
     font-size: 14px;
+    line-height: 21px;
+    padding: 18px 0 8px;
+    box-sizing: border-box;
+
+    // border: 1px solid white;
   }
   .upgradeDetails {
+    box-sizing: border-box;
     font-family: "Poppins";
     font-weight: 500;
+    line-height: 15px;
     font-size: 10px;
+    opacity: 0.4;
+    // border: 1px solid white;
+  }
+  .upgradeIcon {
+    width: 50px;
+    height: 50px;
   }
 }

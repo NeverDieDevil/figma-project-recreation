@@ -1,0 +1,18 @@
+.projectFinance {
+  width: 747px;
+  height: 154px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 27.5px 30.5px;
+  text-align: left;
+  table {
+    tr {
+      align-items: left;
+
+      td {
+        padding: 10px 0;
+      }
+    }
+  }
+}
