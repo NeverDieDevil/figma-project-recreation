@@ -9,7 +9,6 @@ import Logout from "../images/logout.svg";
 import Theme from "../images/theme.svg";
 import Tile from "./Tile";
 import MenuOption from "./MenuOption";
-import { Fragment } from "react/cjs/react.production.min";
 
 const DashboardMenu = () => {
   const options = [
