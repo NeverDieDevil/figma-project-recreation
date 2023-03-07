@@ -15,6 +15,9 @@ import LineChart from "../images/lineChart.svg";
 import BarChart from "../images/barChart.svg";
 import Chart from "./Chart";
 import ProjectFinance from "./ProjectFinance";
+import Person1 from '../images/person1.svg'
+import Person2 from '../images/person2.svg'
+
 
 const getDate = () => {
   const options = {
@@ -29,18 +32,18 @@ const getDate = () => {
 
 const people = [
   {
-    image: "image",
+    image: Person1,
     name: "Michał Obszański",
     progress: "Meet the target",
     value: `$145,000`,
     status: "Financial Officer",
   },
   {
-    image: "image",
+    image: Person2,
     name: "Michał Obszański",
     progress: "Meet the target",
     value: `$145,000`,
-    status: "Financial Officer",
+    status: "Project Manager",
   },
 ];
 
@@ -78,6 +81,10 @@ const Dashboard = () => {
         <Row>
           <ProjectFinance people={people} />
         </Row>
+      </Column>
+      <Column>
+      <DashboardMenu />
+        <Upgrade />
       </Column>
     </div>
   );

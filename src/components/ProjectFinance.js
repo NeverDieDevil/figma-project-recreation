@@ -3,7 +3,15 @@ import Tile from "./Tile";
 
 const ProjectFinance = (props) => {
   const { people } = props;
+  const colorWithStatus=(status)=> {
+    switch(status){
+      case 'Financial Officer':
+        return 'FO'
+      case 'Project Manager':
+        return 'PM'
 
+    }
+  }
   return (
     <Tile>
       <div className="projectFinance">
@@ -23,13 +31,15 @@ const ProjectFinance = (props) => {
               return (
                 <tr>
                   <td>
-                    <img src={person.image} alt='face' />
-                    {person.name}
+                    <div className='name'>
+                      <img src={person.image} alt='face' />
+                      <span>{person.name}</span>
+                    </div>
                   </td>
                   <td>{person.progress}</td>
                   <td>{person.value}</td>
                   <td>
-                    <div className="statusCircle"></div>
+                    <div className={`statusCircle ${colorWithStatus(person.status)}`}></div>
                     {person.status}
                   </td>
                   <td>...</td>
