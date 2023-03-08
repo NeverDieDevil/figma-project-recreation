@@ -15,6 +15,13 @@ import LineChart from "../images/lineChart.svg";
 import BarChart from "../images/barChart.svg";
 import Chart from "./Chart";
 import ProjectFinance from "./ProjectFinance";
+import Person1 from '../images/person1.svg'
+import Person2 from '../images/person2.svg'
+import Person3 from '../images/person3.svg'
+import ProfilePic from '../images/Vader.jpg'
+import Profile from "./Profile";
+import SendMoney from "./SendMoney";
+
 
 const getDate = () => {
   const options = {
@@ -27,21 +34,49 @@ const getDate = () => {
   return today.toLocaleDateString("en-Gb", options);
 };
 
+const profile={
+    image: ProfilePic,
+    name: "Michał Obszański",
+    progress: "Meet the target",
+    value: `$145,000`,
+    status: "Financial Officer",
+    border: `#B983FF`,
+    style: "main",
+    isActive: true
+}
+
 const people = [
   {
-    image: "image",
+    image: Person1,
     name: "Michał Obszański",
     progress: "Meet the target",
     value: `$145,000`,
     status: "Financial Officer",
+    border: "#94B3FD",
+    style: "contact",
+    isActive: true
   },
   {
-    image: "image",
-    name: "Michał Obszański",
+    image: Person2,
+    name: "Emmy Dansom",
     progress: "Meet the target",
     value: `$145,000`,
-    status: "Financial Officer",
+    status: "Project Manager",
+    border: "#A97CEE",
+    style: "contact",
+    isActive: false
   },
+  {
+    image: Person3,
+    name: "Deckrad Anne",
+    progress: "Meet the target",
+    value: `$145,000`,
+    status: "Project Manager",
+    border: "#D261BB",
+    style: "contact",
+    isActive: true
+  },
+
 ];
 
 const Dashboard = () => {
@@ -78,6 +113,10 @@ const Dashboard = () => {
         <Row>
           <ProjectFinance people={people} />
         </Row>
+      </Column>
+      <Column>
+        <Profile profile={profile} contacts={people} />
+        <SendMoney />
       </Column>
     </div>
   );

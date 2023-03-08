@@ -1,0 +1,10 @@
+.profileBtn{
+    display: flex;
+    background-color: #6F4CA4;
+    padding: 18px 23px;
+    border-radius:10px;
+    // gap: 10px;
+    &:not(:last-child){
+        margin-right:24px;
+        }
+}

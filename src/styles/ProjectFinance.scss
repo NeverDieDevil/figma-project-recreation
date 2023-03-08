@@ -1,4 +1,5 @@
 .projectFinance {
+  font-family: "Poppins";
   width: 747px;
   height: 154px;
   display: flex;
@@ -7,11 +8,48 @@
   padding: 27.5px 30.5px;
   text-align: left;
   table {
+    
     tr {
       align-items: left;
-
+      td,th{
+        padding: 10px 15px;
+      }
+      th{
+        font-size: 12px;
+      opacity: 0.6;
+      font-weight: 500;
+      line-height: 18px;
+      }
       td {
-        padding: 10px 0;
+        // display: flex;
+        // flex-direction: row;
+        // text-align: center;
+        // align-items: center;
+        vertical-align: middle;
+        // padding: 10px 10px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        .name{
+          display: flex;
+          align-items: center;
+          img{
+            margin-right: 15px;
+          }
+        }
+        .statusCircle{
+          display:inline-block;
+          width:9px;
+          height: 9px;
+          border-radius: 50%;
+          margin-right: 10px;
+          &.FO{
+            background-color: #D261BB;
+          }
+          &.PM{
+            background-color: #94DAFF;
+          }
+        }
       }
     }
   }
