@@ -1,0 +1,40 @@
+.sendMoney{
+    padding: 28px 34px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    .sendMoneyText{
+        display: flex;
+        flex-direction: column;
+        margin-right: 52px;
+        .send{
+            font-family: "Poppins";
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 9px;
+        }
+        .yourCardCircle{
+            display: flex;
+            .circle{
+                width:17px;
+                height: 17px;
+                background-color: #FF98BF;
+                border-radius: 50%;
+                margin-right: 14px;
+            }
+            .card{
+                font-family: "Poppins";
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+    .moneyValue{
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}

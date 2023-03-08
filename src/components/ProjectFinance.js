@@ -27,7 +27,8 @@ const ProjectFinance = (props) => {
             </tr>
           </thead>
           <tbody>
-            {people.map((person) => {
+            {people.map((person, index) => {
+              if(index<2){
               return (
                 <tr>
                   <td>
@@ -44,7 +45,7 @@ const ProjectFinance = (props) => {
                   </td>
                   <td>...</td>
                 </tr>
-              );
+              );}
             })}
           </tbody>
         </table>
